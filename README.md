@@ -43,6 +43,7 @@ ip routing
 
 interface Vlan10
  ip address 192.168.40.62 255.255.255.192
+
 !
 interface Vlan20
  ip address 192.168.40.126 255.255.255.192
@@ -57,3 +58,4 @@ interface Vlan40
 ## 🔍 Verification & Testing
 - **Intra-VLAN Verification:** Host-to-host connectivity within individual VLANs communicates successfully at Layer 2 via MAC forwarding tables.
 - **Inter-VLAN Routing Verification:** ICMP traffic successfully navigates across boundaries (e.g., VLAN 10 to VLAN 40) via Switch 2's routing table (`show ip route`).
+![Successful Inter-VLAN Ping](ping-test.png)
